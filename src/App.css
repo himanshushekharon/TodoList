@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  justify-items: center;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #f5f7fb;
+}
+
+/* Center app */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  background: #ffffff;
+  width: 100%;
+  max-width: 600px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+/* Stats boxes */
+.stats {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.stat-box {
+  flex: 1;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.stat-box h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.stat-box p {
+  margin-top: 8px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Input */
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  outline: none;
+}
+
+.input-section input:focus {
+  border-color: #6366f1;
+}
+
+button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #6366f1;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4f46e5;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.filters button:hover {
+  background: #d1d5db;
+}
+
+/* Task list */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.task span {
+  flex: 1;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none; /* removes underline */
+}
+
+.task span.done {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.task button {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.task button:hover {
+  background: #d1d5db;
+}
+
+/* Remove checkbox focus outline */
+input[type="checkbox"]:focus {
+  outline: none;
+}
